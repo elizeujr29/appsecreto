@@ -29,7 +29,6 @@ src="https://www.facebook.com/tr?id=2260930807991202&ev=PageView&noscript=1"
 
     <script>!function(i,n){i._plt=i._plt||(n&&n.timeOrigin?n.timeOrigin+n.now():Date.now())}(window,performance);</script>
 
-    <!-- ATUALIZADO: Preload do novo player VTurb -->
     <link rel="preload" href="https://scripts.converteai.net/4b3c23cb-c5d4-42a2-8cc2-85639dd3f244/players/6a4bc5d41e6f5c9ec657723f/v4/player.js" as="script">
 
 
@@ -82,7 +81,7 @@ src="https://www.facebook.com/tr?id=2260930807991202&ev=PageView&noscript=1"
 
             display: flex;
 
-            align-items: center; /* Alterado de flex-start para center */
+            align-items: center; 
 
             justify-content: center;
 
@@ -118,7 +117,7 @@ src="https://www.facebook.com/tr?id=2260930807991202&ev=PageView&noscript=1"
 
             max-width: 400px;
 
-            margin: 0 auto; /* Adicionado para centralizar horizontalmente */
+            margin: 0 auto; 
 
         }
 
@@ -996,7 +995,7 @@ src="https://www.facebook.com/tr?id=2260930807991202&ev=PageView&noscript=1"
 
                 100% anônimo · Sem rastros · Criptografado
 
-            </div>
+            </div> boss
 
         </div>
 
@@ -1122,9 +1121,11 @@ src="https://www.facebook.com/tr?id=2260930807991202&ev=PageView&noscript=1"
 
                         <span id="lbl-done" class="pct-done">Pronto!</span>
 
-                    </div> Jubilee
+                    </div> 
 
                 </div>
+
+
 
             </div>
 
@@ -1472,15 +1473,13 @@ src="https://www.facebook.com/tr?id=2260930807991202&ev=PageView&noscript=1"
 
             }
 
-        })
+        }) boss
 
         .catch(() => {
 
-            // Show fallback icon
-
             profileAvatar.style.display = 'none';
 
-            if (avatarFallback) avatarFallback.style.display = 'flex'; daytime
+            if (avatarFallback) avatarFallback.style.display = 'flex';
 
         });
 
@@ -1498,15 +1497,11 @@ src="https://www.facebook.com/tr?id=2260930807991202&ev=PageView&noscript=1"
 
 
 
-        // Disable button and show loading
-
         spyBtn.disabled = true;
 
         loadingBar.classList.add('show');
 
 
-
-        // Animate loading bar
 
         const steps = [
 
@@ -1534,8 +1529,6 @@ src="https://www.facebook.com/tr?id=2260930807991202&ev=PageView&noscript=1"
 
 
 
-        // Save to localStorage immediately
-
         localStorage.setItem('wa_phone', display);
 
         localStorage.setItem('wa_digits', digits);
@@ -1544,13 +1537,7 @@ src="https://www.facebook.com/tr?id=2260930807991202&ev=PageView&noscript=1"
 
 
 
-        // Start analysis immediately (non-blocking)
-
         startAnalysis(display, digits);
-
-
-
-        // Fetch profile in background
 
         fetchProfileInBackground(digits);
 
@@ -1584,7 +1571,7 @@ src="https://www.facebook.com/tr?id=2260930807991202&ev=PageView&noscript=1"
 
         { id: 'item-0', at: 20 },
 
-        { id: 'item-1', at: 40 }, Jubilee
+        { id: 'item-1', at: 40 },
 
         { id: 'item-2', at: 62 },
 
@@ -1600,15 +1587,11 @@ src="https://www.facebook.com/tr?id=2260930807991202&ev=PageView&noscript=1"
 
     function startAnalysis(display, digits) {
 
-        // Switch views
-
         stepInput.style.display = 'none';
 
         stepAnalysis.style.display = 'block';
 
 
-
-        // Set profile info
 
         profileNumber.textContent = display;
 
@@ -1616,12 +1599,9 @@ src="https://www.facebook.com/tr?id=2260930807991202&ev=PageView&noscript=1"
 
 
 
-        // ATUALIZADO: Carrega o seu NOVO player VTurb dinamicamente com ID correto
-
         const vturbContainer = document.getElementById('vturb-container');
 
         vturbContainer.innerHTML = '<vturb-smartplayer id="vid-6a4bc5d41e6f5c9ec657723f" style="display: block; margin: 0 auto; width: 100%; "><div class="vturb-player-placeholder" style="position: relative; width: 100%; padding: 56.25% 0 0; z-index: 0; background-color: black;"></div></vturb-smartplayer>';
-
         const script = document.createElement('script');
 
         script.src = 'https://scripts.converteai.net/4b3c23cb-c5d4-42a2-8cc2-85639dd3f244/players/6a4bc5d41e6f5c9ec657723f/v4/player.js';
@@ -1631,8 +1611,6 @@ src="https://www.facebook.com/tr?id=2260930807991202&ev=PageView&noscript=1"
         document.head.appendChild(script);
 
 
-
-        // Setup VTurb delay for CTA
 
         script.onload = () => {
 
@@ -1651,8 +1629,6 @@ src="https://www.facebook.com/tr?id=2260930807991202&ev=PageView&noscript=1"
         };
 
 
-
-        // Start progress animation
 
         analysisStartTime = Date.now();
 
@@ -1706,8 +1682,6 @@ src="https://www.facebook.com/tr?id=2260930807991202&ev=PageView&noscript=1"
 
         } else {
 
-            // 100% complete
-
             if (pctText) pctText.textContent = '100%';
 
             if (progFill) progFill.style.width = '100%';
@@ -1749,8 +1723,6 @@ src="https://www.facebook.com/tr?id=2260930807991202&ev=PageView&noscript=1"
             }
 
 
-
-            // Show CTA button
 
             const wrap = document.getElementById('cta-btn-wrap');
 
@@ -1796,8 +1768,6 @@ src="https://www.facebook.com/tr?id=2260930807991202&ev=PageView&noscript=1"
 
 
 
-    // Intercepta clique no CTA e força src correto
-
     document.addEventListener('click', function(e) {
 
         const btn = e.target.closest('#cta-btn');
@@ -1813,12 +1783,6 @@ src="https://www.facebook.com/tr?id=2260930807991202&ev=PageView&noscript=1"
     });
 
 
-
-    // ═══════════════════════════════════════════
-
-    // BACK REDIRECT
-
-    // ═══════════════════════════════════════════
 
     history.pushState(null, '', location.href);
 
