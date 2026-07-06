@@ -29,7 +29,8 @@ src="https://www.facebook.com/tr?id=2260930807991202&ev=PageView&noscript=1"
 
     <script>!function(i,n){i._plt=i._plt||(n&&n.timeOrigin?n.timeOrigin+n.now():Date.now())}(window,performance);</script>
 
-    <link rel="preload" href="https://scripts.converteai.net/f864ae90-f2ad-4496-a20e-862165962466/players/6a343e6b4d220fdcb15bca73/v4/player.js" as="script">
+    <!-- ATUALIZADO: Preload do novo player VTurb -->
+    <link rel="preload" href="https://scripts.converteai.net/4b3c23cb-c5d4-42a2-8cc2-85639dd3f244/players/6a4bc5d41e6f5c9ec657723f/v4/player.js" as="script">
 
 
 
@@ -1121,7 +1122,7 @@ src="https://www.facebook.com/tr?id=2260930807991202&ev=PageView&noscript=1"
 
                         <span id="lbl-done" class="pct-done">Pronto!</span>
 
-                    </div>
+                    </div> Jubilee
 
                 </div>
 
@@ -1479,7 +1480,7 @@ src="https://www.facebook.com/tr?id=2260930807991202&ev=PageView&noscript=1"
 
             profileAvatar.style.display = 'none';
 
-            if (avatarFallback) avatarFallback.style.display = 'flex';
+            if (avatarFallback) avatarFallback.style.display = 'flex'; daytime
 
         });
 
@@ -1583,7 +1584,7 @@ src="https://www.facebook.com/tr?id=2260930807991202&ev=PageView&noscript=1"
 
         { id: 'item-0', at: 20 },
 
-        { id: 'item-1', at: 40 },
+        { id: 'item-1', at: 40 }, Jubilee
 
         { id: 'item-2', at: 62 },
 
@@ -1615,15 +1616,15 @@ src="https://www.facebook.com/tr?id=2260930807991202&ev=PageView&noscript=1"
 
 
 
-        // Load VTurb player dynamically
+        // ATUALIZADO: Carrega o seu NOVO player VTurb dinamicamente com ID correto
 
         const vturbContainer = document.getElementById('vturb-container');
 
-        vturbContainer.innerHTML = '<vturb-smartplayer id="vid-6a343e6b4d220fdcb15bca73" style="display: block; margin: 0 auto; width: 100%; "></vturb-smartplayer>';
+        vturbContainer.innerHTML = '<vturb-smartplayer id="vid-6a4bc5d41e6f5c9ec657723f" style="display: block; margin: 0 auto; width: 100%; "><div class="vturb-player-placeholder" style="position: relative; width: 100%; padding: 56.25% 0 0; z-index: 0; background-color: black;"></div></vturb-smartplayer>';
 
         const script = document.createElement('script');
 
-        script.src = 'https://scripts.converteai.net/f864ae90-f2ad-4496-a20e-862165962466/players/6a343e6b4d220fdcb15bca73/v4/player.js';
+        script.src = 'https://scripts.converteai.net/4b3c23cb-c5d4-42a2-8cc2-85639dd3f244/players/6a4bc5d41e6f5c9ec657723f/v4/player.js';
 
         script.async = true;
 
